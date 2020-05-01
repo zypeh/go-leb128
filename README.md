@@ -23,18 +23,22 @@ DecodeULeb128(sleb624485) // compiles !
 ### Encoding
 
 **EncodeFromUint64(uint64) ULeb128**
+
 Encode `uint64` typed integer into `ULeb128`
 
 **EncodeFromInt64(int64) SLeb128**
+
 Encode `int64` typed integer into `SLeb128`
 
 
 ### Decoding
 
 **DecodeULeb128(ULeb128) (uint64, error)**
+
 Decode `ULeb128` to uint64 with error flag
 
 **DecodeSLeb128(SLeb128) (int64, error)**
+
 Decode `SLeb128` to int64 with error flag
 
 > If the error is not equal to nil (means error occurred). The result is always 0
@@ -42,7 +46,9 @@ Decode `SLeb128` to int64 with error flag
 ### Utilities
 
 **AppendSLeb128(x, y SLeb128) SLeb128**
+
 Append two `Sleb128` into one `SLeb128`
 
 **AppendULeb128(x, y ULeb128) ULeb128**
+
 Append two `Uleb128` into one `ULeb128`
